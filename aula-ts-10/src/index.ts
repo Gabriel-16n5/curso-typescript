@@ -1,10 +1,9 @@
-type Generic<TYPE> = {
-    value: TYPE
-}
+// type Generic<TYPE> = {
+//     value: TYPE
+// }
 
 
-
-function identity<TYPE> (value:TYPE) {
+function identity<T> (value:T) {
     return value;
 }
 
@@ -16,6 +15,7 @@ console.log(identity<undefined>(null));
 console.log(identity<null>(undefined));
 
 //exemplo do professor:
+
 type Collection<TIPO> = {
     content: TIPO[]
 }
